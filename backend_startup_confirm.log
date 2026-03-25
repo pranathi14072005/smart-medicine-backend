@@ -1,0 +1,100 @@
+﻿        r1_0.end_date,
+        r1_0.frequency,
+        r1_0.last_taken_at,
+        r1_0.medicine_id,
+        r1_0.notes,
+        r1_0.notification_type,
+        r1_0.snooze_minutes,
+        r1_0.start_date,
+        r1_0.title,
+        r1_0.updated_at,
+        r1_0.user_id 
+    from
+        reminders r1_0 
+    where
+        r1_0.is_active=1 
+        and r1_0.start_date<=? 
+        and (
+            r1_0.end_date is null 
+            or r1_0.end_date>=?
+        )
+2026-03-18T09:48:02.823+05:30 DEBUG 18568 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Checking 2 active reminders for notifications
+2026-03-18T09:48:02.828+05:30 DEBUG 18568 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.is_active,
+        u1_0.created_at,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.fcm_token,
+        u1_0.full_name,
+        u1_0.notification_enabled,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.profile_picture,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.is_active,
+        u1_0.created_at,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.fcm_token,
+        u1_0.full_name,
+        u1_0.notification_enabled,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.profile_picture,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-03-18T09:48:02.848+05:30 DEBUG 18568 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Checking reminder 'Afternoon Dose' for user 'pranathi' (Notifications: true, Email: pranathipaidi143@gmail.com, FCM: null)
+2026-03-18T09:48:02.848+05:30 DEBUG 18568 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Current system time: 9:48
+2026-03-18T09:48:02.856+05:30 DEBUG 18568 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+Hibernate: 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+2026-03-18T09:48:02.862+05:30 DEBUG 18568 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Comparing scheduled time 13:20 with current time 9:48
+2026-03-18T09:48:02.862+05:30 DEBUG 18568 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Checking reminder 'Night Dose' for user 'pranathi' (Notifications: true, Email: pranathipaidi143@gmail.com, FCM: null)
+2026-03-18T09:48:02.862+05:30 DEBUG 18568 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Current system time: 9:48
+2026-03-18T09:48:02.863+05:30 DEBUG 18568 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+Hibernate: 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?

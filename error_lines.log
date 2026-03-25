@@ -1,0 +1,91 @@
+﻿  + ... va\jdk-25"; C:\Users\HP\maven\apache-maven-3.9.6\bin\mvn.cmd spring-b ...
+  +                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      + CategoryInfo          : NotSpecified: (WARNING: A rest...has been called:String) [], RemoteException
+>     + FullyQualifiedErrorId : NativeCommandError
+   
+  WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module 
+  (file:/C:/Users/HP/maven/apache-maven-3.9.6/lib/jansi-2.4.0.jar)
+          reminder_days dow1_0 
+      where
+          dow1_0.reminder_id=?
+> 2026-03-18T09:42:09.694+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-6] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+> 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+      where
+          m1_0.user_id=? 
+          and m1_0.quantity<=m1_0.low_stock_threshold
+> 2026-03-18T09:42:09.796+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-7] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+> 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+          medicines m1_0 
+      where
+          m1_0.id=?
+> 2026-03-18T09:42:38.768+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-3] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+> 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+      where
+          u1_0.username=? 
+          or u1_0.email=?
+> 2026-03-18T09:42:38.910+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-9] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+> 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+      where
+          m1_0.user_id=? 
+          and m1_0.quantity<=m1_0.low_stock_threshold
+> 2026-03-18T09:43:55.161+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-2] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+> 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+          medicines m1_0 
+      where
+          m1_0.id=?
+> 2026-03-18T09:43:55.281+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-4] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+> 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+  	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]

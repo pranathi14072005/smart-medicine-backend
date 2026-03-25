@@ -1,0 +1,228 @@
+﻿C:\Users\HP\maven\apache-maven-3.9.6\bin\mvn.cmd : WARNING: A restricted method in java.lang.System has been called
+At line:1 char:50
++ ... va\jdk-25"; C:\Users\HP\maven\apache-maven-3.9.6\bin\mvn.cmd spring-b ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: A rest...has been called:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module 
+(file:/C:/Users/HP/maven/apache-maven-3.9.6/lib/jansi-2.4.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by 
+com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper 
+(file:/C:/Users/HP/maven/apache-maven-3.9.6/lib/guava-32.0.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class 
+com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.smartmedicine:smart-medicine >------------------
+[INFO] Building Smart Medicine 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ smart-medicine >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smart-medicine ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smart-medicine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ smart-medicine ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\OneDrive\Desktop\Springboot Projects\smartmedicine\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ smart-medicine ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ smart-medicine <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ smart-medicine ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-03-18T09:41:18.821+05:30  INFO 15424 --- [SmartMedicine] [           main] c.s.SmartMedicineApplication             : Starting SmartMedicineApplication using Java 25.0.1 with PID 15424 (C:\Users\HP\OneDrive\Desktop\Springboot Projects\smartmedicine\target\classes started by HP in C:\Users\HP\OneDrive\Desktop\Springboot Projects\smartmedicine)
+2026-03-18T09:41:18.825+05:30 DEBUG 15424 --- [SmartMedicine] [           main] c.s.SmartMedicineApplication             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T09:41:18.826+05:30  INFO 15424 --- [SmartMedicine] [           main] c.s.SmartMedicineApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T09:41:21.457+05:30  INFO 15424 --- [SmartMedicine] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T09:41:21.600+05:30  INFO 15424 --- [SmartMedicine] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 3 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/HP/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-03-18T09:41:23.891+05:30  INFO 15424 --- [SmartMedicine] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-03-18T09:41:23.914+05:30  INFO 15424 --- [SmartMedicine] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T09:41:23.916+05:30  INFO 15424 --- [SmartMedicine] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T09:41:24.111+05:30  INFO 15424 --- [SmartMedicine] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18T09:41:24.113+05:30  INFO 15424 --- [SmartMedicine] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5138 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-03-18T09:41:24.842+05:30  INFO 15424 --- [SmartMedicine] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T09:41:25.021+05:30  INFO 15424 --- [SmartMedicine] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-18T09:41:25.126+05:30  INFO 15424 --- [SmartMedicine] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T09:41:25.848+05:30  INFO 15424 --- [SmartMedicine] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T09:41:26.074+05:30  INFO 15424 --- [SmartMedicine] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-18T09:41:26.471+05:30  INFO 15424 --- [SmartMedicine] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d0abb23
+2026-03-18T09:41:26.474+05:30  INFO 15424 --- [SmartMedicine] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-18T09:41:29.035+05:30  INFO 15424 --- [SmartMedicine] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T09:41:29.418+05:30  INFO 15424 --- [SmartMedicine] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T09:41:30.338+05:30  INFO 15424 --- [SmartMedicine] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.modelmapper.internal.typetools.TypeResolver (file:/C:/Users/HP/.m2/repository/org/modelmapper/modelmapper/3.2.0/modelmapper-3.2.0.jar)
+WARNING: Please consider reporting this to the maintainers of class org.modelmapper.internal.typetools.TypeResolver
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+2026-03-18T09:41:31.438+05:30 DEBUG 15424 --- [SmartMedicine] [           main] c.s.config.JwtAuthenticationFilter       : Filter 'jwtAuthenticationFilter' configured for use
+2026-03-18T09:41:31.481+05:30  WARN 15424 --- [SmartMedicine] [           main] c.smartmedicine.config.FirebaseConfig    : Firebase service account not found at 'class path resource [firebase-service-account.json]'. Push notifications will be disabled.
+2026-03-18T09:41:34.042+05:30  INFO 15424 --- [SmartMedicine] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-03-18T09:41:34.257+05:30  INFO 15424 --- [SmartMedicine] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@fce6355, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4668f98c, org.springframework.security.web.context.SecurityContextHolderFilter@699e81db, org.springframework.security.web.header.HeaderWriterFilter@2c6c67e0, org.springframework.web.filter.CorsFilter@4a05902b, org.springframework.security.web.authentication.logout.LogoutFilter@f4694f8, com.smartmedicine.config.JwtAuthenticationFilter@3022287e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@295f5dd5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8c41677, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76d11298, org.springframework.security.web.session.SessionManagementFilter@38187be6, org.springframework.security.web.access.ExceptionTranslationFilter@12223aed, org.springframework.security.web.access.intercept.AuthorizationFilter@34453e71]
+2026-03-18T09:41:36.400+05:30  INFO 15424 --- [SmartMedicine] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2026-03-18T09:41:36.458+05:30  INFO 15424 --- [SmartMedicine] [           main] c.s.SmartMedicineApplication             : Started SmartMedicineApplication in 18.74 seconds (process running for 19.866)
+2026-03-18T09:41:36.771+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.is_active,
+        r1_0.is_completed,
+        r1_0.created_at,
+        r1_0.dose_amount,
+        r1_0.dose_unit,
+        r1_0.end_date,
+        r1_0.frequency,
+        r1_0.last_taken_at,
+        r1_0.medicine_id,
+        r1_0.notes,
+        r1_0.notification_type,
+        r1_0.snooze_minutes,
+        r1_0.start_date,
+        r1_0.title,
+        r1_0.updated_at,
+        r1_0.user_id 
+    from
+        reminders r1_0 
+    where
+        r1_0.is_active=1 
+        and r1_0.start_date<=? 
+        and (
+            r1_0.end_date is null 
+            or r1_0.end_date>=?
+        )
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.is_active,
+        r1_0.is_completed,
+        r1_0.created_at,
+        r1_0.dose_amount,
+        r1_0.dose_unit,
+        r1_0.end_date,
+        r1_0.frequency,
+        r1_0.last_taken_at,
+        r1_0.medicine_id,
+        r1_0.notes,
+        r1_0.notification_type,
+        r1_0.snooze_minutes,
+        r1_0.start_date,
+        r1_0.title,
+        r1_0.updated_at,
+        r1_0.user_id 
+    from
+        reminders r1_0 
+    where
+        r1_0.is_active=1 
+        and r1_0.start_date<=? 
+        and (
+            r1_0.end_date is null 
+            or r1_0.end_date>=?
+        )
+2026-03-18T09:41:36.822+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Checking 2 active reminders for notifications
+2026-03-18T09:41:36.826+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.is_active,
+        u1_0.created_at,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.fcm_token,
+        u1_0.full_name,
+        u1_0.notification_enabled,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.profile_picture,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.is_active,
+        u1_0.created_at,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.fcm_token,
+        u1_0.full_name,
+        u1_0.notification_enabled,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.profile_picture,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-03-18T09:41:36.832+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Checking reminder 'Afternoon Dose' for user 'pranathi' (Notifications: true, Email: pranathipaidi143@gmail.com, FCM: null)
+2026-03-18T09:41:36.832+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Current system time: 9:41
+2026-03-18T09:41:36.837+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+Hibernate: 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+2026-03-18T09:41:36.845+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Comparing scheduled time 13:20 with current time 9:41
+2026-03-18T09:41:36.845+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Checking reminder 'Night Dose' for user 'pranathi' (Notifications: true, Email: pranathipaidi143@gmail.com, FCM: null)
+2026-03-18T09:41:36.845+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Current system time: 9:41
+2026-03-18T09:41:36.845+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+Hibernate: 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?

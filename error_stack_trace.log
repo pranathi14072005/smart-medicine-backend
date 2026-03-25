@@ -1,0 +1,84 @@
+﻿          reminder_days dow1_0 
+      where
+          dow1_0.reminder_id=?
+> 2026-03-18T09:42:09.694+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-6] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.getNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:160) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:106) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+      where
+          m1_0.user_id=? 
+          and m1_0.quantity<=m1_0.low_stock_threshold
+> 2026-03-18T09:42:09.796+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-7] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.getNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:160) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:106) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+          medicines m1_0 
+      where
+          m1_0.id=?
+> 2026-03-18T09:42:38.768+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-3] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.getNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:160) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:106) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+      where
+          u1_0.username=? 
+          or u1_0.email=?
+> 2026-03-18T09:42:38.910+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-9] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.getNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:160) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:106) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+      where
+          m1_0.user_id=? 
+          and m1_0.quantity<=m1_0.low_stock_threshold
+> 2026-03-18T09:43:55.161+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-2] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.getNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:160) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:106) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+          medicines m1_0 
+      where
+          m1_0.id=?
+> 2026-03-18T09:43:55.281+05:30 ERROR 15424 --- [SmartMedicine] [nio-8082-exec-4] c.s.exception.GlobalExceptionHandler     : Unexpected error: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  
+  java.lang.IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not found in class file either.
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:183) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.getNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:160) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:106) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171) ~[spring-web-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+  	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]

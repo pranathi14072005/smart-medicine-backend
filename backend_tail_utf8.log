@@ -1,0 +1,500 @@
+﻿        m1_0.user_id 
+    from
+        medicines m1_0 
+    where
+        m1_0.user_id=? 
+        and m1_0.expiry_date<?
+2026-03-18T09:43:55.389+05:30 DEBUG 15424 --- [SmartMedicine] [nio-8082-exec-3] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.is_active,
+        r1_0.is_completed,
+        r1_0.created_at,
+        r1_0.dose_amount,
+        r1_0.dose_unit,
+        r1_0.end_date,
+        r1_0.frequency,
+        r1_0.last_taken_at,
+        r1_0.medicine_id,
+        r1_0.notes,
+        r1_0.notification_type,
+        r1_0.snooze_minutes,
+        r1_0.start_date,
+        r1_0.title,
+        r1_0.updated_at,
+        r1_0.user_id 
+    from
+        reminders r1_0 
+    where
+        r1_0.user_id=? 
+        and r1_0.is_active=1 
+        and r1_0.start_date<=? 
+        and (
+            r1_0.end_date is null 
+            or r1_0.end_date>=?
+        )
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.is_active,
+        r1_0.is_completed,
+        r1_0.created_at,
+        r1_0.dose_amount,
+        r1_0.dose_unit,
+        r1_0.end_date,
+        r1_0.frequency,
+        r1_0.last_taken_at,
+        r1_0.medicine_id,
+        r1_0.notes,
+        r1_0.notification_type,
+        r1_0.snooze_minutes,
+        r1_0.start_date,
+        r1_0.title,
+        r1_0.updated_at,
+        r1_0.user_id 
+    from
+        reminders r1_0 
+    where
+        r1_0.user_id=? 
+        and r1_0.is_active=1 
+        and r1_0.start_date<=? 
+        and (
+            r1_0.end_date is null 
+            or r1_0.end_date>=?
+        )
+2026-03-18T09:43:55.389+05:30 DEBUG 15424 --- [SmartMedicine] [io-8082-exec-10] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.barcode,
+        m1_0.batch_number,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.dosage,
+        m1_0.dosage_unit,
+        m1_0.expiry_date,
+        m1_0.image_url,
+        m1_0.low_stock_threshold,
+        m1_0.manufacturer,
+        m1_0.medicine_type,
+        m1_0.name,
+        m1_0.prescription_required,
+        m1_0.price,
+        m1_0.purchase_date,
+        m1_0.quantity,
+        m1_0.quantity_unit,
+        m1_0.side_effects,
+        m1_0.status,
+        m1_0.storage_instructions,
+        m1_0.updated_at,
+        m1_0.user_id 
+    from
+        medicines m1_0 
+    where
+        m1_0.user_id=? 
+        and m1_0.quantity<=m1_0.low_stock_threshold
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.barcode,
+        m1_0.batch_number,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.dosage,
+        m1_0.dosage_unit,
+        m1_0.expiry_date,
+        m1_0.image_url,
+        m1_0.low_stock_threshold,
+        m1_0.manufacturer,
+        m1_0.medicine_type,
+        m1_0.name,
+        m1_0.prescription_required,
+        m1_0.price,
+        m1_0.purchase_date,
+        m1_0.quantity,
+        m1_0.quantity_unit,
+        m1_0.side_effects,
+        m1_0.status,
+        m1_0.storage_instructions,
+        m1_0.updated_at,
+        m1_0.user_id 
+    from
+        medicines m1_0 
+    where
+        m1_0.user_id=? 
+        and m1_0.quantity<=m1_0.low_stock_threshold
+2026-03-18T09:43:55.394+05:30 DEBUG 15424 --- [SmartMedicine] [nio-8082-exec-3] org.hibernate.SQL                        : 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+Hibernate: 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+2026-03-18T09:43:55.395+05:30 DEBUG 15424 --- [SmartMedicine] [io-8082-exec-10] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.barcode,
+        m1_0.batch_number,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.dosage,
+        m1_0.dosage_unit,
+        m1_0.expiry_date,
+        m1_0.image_url,
+        m1_0.low_stock_threshold,
+        m1_0.manufacturer,
+        m1_0.medicine_type,
+        m1_0.name,
+        m1_0.prescription_required,
+        m1_0.price,
+        m1_0.purchase_date,
+        m1_0.quantity,
+        m1_0.quantity_unit,
+        m1_0.side_effects,
+        m1_0.status,
+        m1_0.storage_instructions,
+        m1_0.updated_at,
+        m1_0.user_id 
+    from
+        medicines m1_0 
+    where
+        m1_0.user_id=? 
+        and m1_0.expiry_date between ? and ?
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.barcode,
+        m1_0.batch_number,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.dosage,
+        m1_0.dosage_unit,
+        m1_0.expiry_date,
+        m1_0.image_url,
+        m1_0.low_stock_threshold,
+        m1_0.manufacturer,
+        m1_0.medicine_type,
+        m1_0.name,
+        m1_0.prescription_required,
+        m1_0.price,
+        m1_0.purchase_date,
+        m1_0.quantity,
+        m1_0.quantity_unit,
+        m1_0.side_effects,
+        m1_0.status,
+        m1_0.storage_instructions,
+        m1_0.updated_at,
+        m1_0.user_id 
+    from
+        medicines m1_0 
+    where
+        m1_0.user_id=? 
+        and m1_0.expiry_date between ? and ?
+2026-03-18T09:43:55.395+05:30 DEBUG 15424 --- [SmartMedicine] [nio-8082-exec-3] org.hibernate.SQL                        : 
+    select
+        dow1_0.reminder_id,
+        dow1_0.day_of_week 
+    from
+        reminder_days dow1_0 
+    where
+        dow1_0.reminder_id=?
+Hibernate: 
+    select
+        dow1_0.reminder_id,
+        dow1_0.day_of_week 
+    from
+        reminder_days dow1_0 
+    where
+        dow1_0.reminder_id=?
+2026-03-18T09:43:55.414+05:30 DEBUG 15424 --- [SmartMedicine] [nio-8082-exec-3] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.barcode,
+        m1_0.batch_number,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.dosage,
+        m1_0.dosage_unit,
+        m1_0.expiry_date,
+        m1_0.image_url,
+        m1_0.low_stock_threshold,
+        m1_0.manufacturer,
+        m1_0.medicine_type,
+        m1_0.name,
+        m1_0.prescription_required,
+        m1_0.price,
+        m1_0.purchase_date,
+        m1_0.quantity,
+        m1_0.quantity_unit,
+        m1_0.side_effects,
+        m1_0.status,
+        m1_0.storage_instructions,
+        m1_0.updated_at,
+        m1_0.user_id 
+    from
+        medicines m1_0 
+    where
+        m1_0.id=?
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.barcode,
+        m1_0.batch_number,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.dosage,
+        m1_0.dosage_unit,
+        m1_0.expiry_date,
+        m1_0.image_url,
+        m1_0.low_stock_threshold,
+        m1_0.manufacturer,
+        m1_0.medicine_type,
+        m1_0.name,
+        m1_0.prescription_required,
+        m1_0.price,
+        m1_0.purchase_date,
+        m1_0.quantity,
+        m1_0.quantity_unit,
+        m1_0.side_effects,
+        m1_0.status,
+        m1_0.storage_instructions,
+        m1_0.updated_at,
+        m1_0.user_id 
+    from
+        medicines m1_0 
+    where
+        m1_0.id=?
+2026-03-18T09:43:55.416+05:30 DEBUG 15424 --- [SmartMedicine] [nio-8082-exec-3] org.hibernate.SQL                        : 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+Hibernate: 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+2026-03-18T09:43:55.420+05:30 DEBUG 15424 --- [SmartMedicine] [nio-8082-exec-3] org.hibernate.SQL                        : 
+    select
+        dow1_0.reminder_id,
+        dow1_0.day_of_week 
+    from
+        reminder_days dow1_0 
+    where
+        dow1_0.reminder_id=?
+Hibernate: 
+    select
+        dow1_0.reminder_id,
+        dow1_0.day_of_week 
+    from
+        reminder_days dow1_0 
+    where
+        dow1_0.reminder_id=?
+2026-03-18T09:43:55.421+05:30 DEBUG 15424 --- [SmartMedicine] [nio-8082-exec-3] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.barcode,
+        m1_0.batch_number,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.dosage,
+        m1_0.dosage_unit,
+        m1_0.expiry_date,
+        m1_0.image_url,
+        m1_0.low_stock_threshold,
+        m1_0.manufacturer,
+        m1_0.medicine_type,
+        m1_0.name,
+        m1_0.prescription_required,
+        m1_0.price,
+        m1_0.purchase_date,
+        m1_0.quantity,
+        m1_0.quantity_unit,
+        m1_0.side_effects,
+        m1_0.status,
+        m1_0.storage_instructions,
+        m1_0.updated_at,
+        m1_0.user_id 
+    from
+        medicines m1_0 
+    where
+        m1_0.id=?
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.barcode,
+        m1_0.batch_number,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.dosage,
+        m1_0.dosage_unit,
+        m1_0.expiry_date,
+        m1_0.image_url,
+        m1_0.low_stock_threshold,
+        m1_0.manufacturer,
+        m1_0.medicine_type,
+        m1_0.name,
+        m1_0.prescription_required,
+        m1_0.price,
+        m1_0.purchase_date,
+        m1_0.quantity,
+        m1_0.quantity_unit,
+        m1_0.side_effects,
+        m1_0.status,
+        m1_0.storage_instructions,
+        m1_0.updated_at,
+        m1_0.user_id 
+    from
+        medicines m1_0 
+    where
+        m1_0.id=?
+2026-03-18T09:44:36.946+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.is_active,
+        r1_0.is_completed,
+        r1_0.created_at,
+        r1_0.dose_amount,
+        r1_0.dose_unit,
+        r1_0.end_date,
+        r1_0.frequency,
+        r1_0.last_taken_at,
+        r1_0.medicine_id,
+        r1_0.notes,
+        r1_0.notification_type,
+        r1_0.snooze_minutes,
+        r1_0.start_date,
+        r1_0.title,
+        r1_0.updated_at,
+        r1_0.user_id 
+    from
+        reminders r1_0 
+    where
+        r1_0.is_active=1 
+        and r1_0.start_date<=? 
+        and (
+            r1_0.end_date is null 
+            or r1_0.end_date>=?
+        )
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.is_active,
+        r1_0.is_completed,
+        r1_0.created_at,
+        r1_0.dose_amount,
+        r1_0.dose_unit,
+        r1_0.end_date,
+        r1_0.frequency,
+        r1_0.last_taken_at,
+        r1_0.medicine_id,
+        r1_0.notes,
+        r1_0.notification_type,
+        r1_0.snooze_minutes,
+        r1_0.start_date,
+        r1_0.title,
+        r1_0.updated_at,
+        r1_0.user_id 
+    from
+        reminders r1_0 
+    where
+        r1_0.is_active=1 
+        and r1_0.start_date<=? 
+        and (
+            r1_0.end_date is null 
+            or r1_0.end_date>=?
+        )
+2026-03-18T09:44:36.958+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Checking 2 active reminders for notifications
+2026-03-18T09:44:36.960+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.is_active,
+        u1_0.created_at,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.fcm_token,
+        u1_0.full_name,
+        u1_0.notification_enabled,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.profile_picture,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.is_active,
+        u1_0.created_at,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.fcm_token,
+        u1_0.full_name,
+        u1_0.notification_enabled,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.profile_picture,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-03-18T09:44:36.962+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Checking reminder 'Afternoon Dose' for user 'pranathi' (Notifications: true, Email: pranathipaidi143@gmail.com, FCM: null)
+2026-03-18T09:44:36.963+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Current system time: 9:44
+2026-03-18T09:44:36.963+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+Hibernate: 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+2026-03-18T09:44:36.966+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Comparing scheduled time 13:20 with current time 9:44
+2026-03-18T09:44:36.966+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Checking reminder 'Night Dose' for user 'pranathi' (Notifications: true, Email: pranathipaidi143@gmail.com, FCM: null)
+2026-03-18T09:44:36.966+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] c.smartmedicine.service.ReminderService  : Current system time: 9:44
+2026-03-18T09:44:36.967+05:30 DEBUG 15424 --- [SmartMedicine] [   scheduling-1] org.hibernate.SQL                        : 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
+Hibernate: 
+    select
+        rt1_0.reminder_id,
+        rt1_0.reminder_time 
+    from
+        reminder_times rt1_0 
+    where
+        rt1_0.reminder_id=?
