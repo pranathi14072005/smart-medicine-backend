@@ -28,8 +28,6 @@ public class JwtTokenProvider {
         return Keys.hmacShaKeyFor(jwtSecret.getBytes());
     }
 
-    // ================= TOKEN GENERATION =================
-
     public String generateToken(UserDetails userDetails) {
         return generateToken(new HashMap<>(), userDetails, jwtExpiration);
     }
@@ -38,17 +36,15 @@ public class JwtTokenProvider {
         return generateToken(new HashMap<>(), userDetails, refreshExpiration);
     }
 
-    private String generateToken(Map<String, Object> extraClaims, UserDetails userDetails, long expiration) {
+    private String generateToken(Map<String, Object> claims, UserDetails userDetails, long expiration) {
         return Jwts.builder()
-                .setClaims(extraClaims)
+                .setClaims(claims)
                 .setSubject(userDetails.getUsername())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + expiration))
                 .signWith(getSigningKey(), SignatureAlgorithm.HS256)
                 .compact();
     }
-
-    // ================= TOKEN VALIDATION =================
 
     public boolean validateToken(String token) {
         try {
@@ -63,11 +59,9 @@ public class JwtTokenProvider {
     }
 
     public boolean isTokenValid(String token, UserDetails userDetails) {
-        final String username = extractUsername(token);
+        String username = extractUsername(token);
         return username.equals(userDetails.getUsername()) && !isTokenExpired(token);
     }
-
-    // ================= CLAIMS =================
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -90,8 +84,6 @@ public class JwtTokenProvider {
     private boolean isTokenExpired(String token) {
         return extractExpiration(token).before(new Date());
     }
-
-    // ================= GETTERS =================
 
     public long getJwtExpiration() {
         return jwtExpiration;
